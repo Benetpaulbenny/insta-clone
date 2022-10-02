@@ -1,8 +1,37 @@
-html,body {
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
     margin: 0;
-    border: 0;
+}
+/*Code Here */
+.main_container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
-#container {
+.secA{
+    align-items: center;
     justify-content: center;
+    height: 398px;
+    width: 350px;
+    background-color: blue;
+    margin-top: 37px;
+}
+
+
+
+.b1{
+
+    text-align: center;
+    justify-content: center;
+    margin-top: 20%;
+    color: darkslategray;
 }
