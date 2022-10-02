@@ -29,6 +29,17 @@ body {
     justify-content: center;
     align-items: flex-start;
 }
+
+
+
+.b1{
+
+    text-align: center;
+    justify-content: center;
+    margin-top: 20%;
+    color: darkslategray;
+    
+}
 .mlogo{
     margin-top: 40px;
 }
