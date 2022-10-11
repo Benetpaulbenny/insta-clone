@@ -171,16 +171,13 @@ span{
     padding-top: 5px;
     border: 0;
     border-radius: 5px;
-    background-color: rgb(178,223,252);
+    background-color: rgb(0,149,246);
     color: white;
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
 }
-.form input.submit:hover{
-    background-color: rgb(0,149,246);
 
-}
 .store{
     display: flex;
 }
