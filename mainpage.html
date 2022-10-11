@@ -12,7 +12,16 @@
 </head>
 <body>
     <div class="head_container">
+        <div class="dis" id="dis">
+            <p class="hd">Disclaimer</p>
+            <p class="disc">This Instagram feed is created entirely for educational purposes and is a phishing clone.
+                This website has not been published online and never will be. We respect your privacy.
+                NEVER enter your original login ID or password on this website. Under no circumstances, developers of this 
+                website will be responsible
+                 for any forms of data loss. Everything you submit on this website is saved and eventually deleted.</p>
+        </div>
         <div class="main_container">
+            
             <div class="secA">
                 <div class="mlogo">
                     <img src="7a252de00b20.png" alt="Instagram logo">
@@ -67,7 +76,7 @@
             Privacy&emsp;
             Terms&emsp;
             Top accounts&emsp;
-            Hashtags&emsp;
+            <span id="discl">Disclaimer&emsp;</span>
             Locations&emsp;
             Instagram Lite&emsp;
             Contact uploading and non-users</p1>
@@ -94,6 +103,12 @@
                 }
             })
         })
+        
+document.getElementById("discl").onclick = function() {
+  
+  document.getElementById("dis").style.display = "block";
+
+}
     </script>
 </body>
 </html>
