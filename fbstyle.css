@@ -17,7 +17,7 @@ html, body{
     justify-content: center;
 }
 .can2 {
-    height: 266px;
+    height: 274px;
     width: 544px;
     background-color: white;
     display: flex;
@@ -29,24 +29,55 @@ html, body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #1C1E21;
+    margin: 15px;
+    padding-top: 34px;
 }
-.subform{
+.logform{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    
+}
+.logform input{
+    width: 259px;
+    height: 20px;
+    margin: 6px;
+    padding: 5px 8px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+}
+.logform input.btn{
+    height: 39px;
+    width: 278px;
+    cursor: pointer;
+    background-color: rgb(65,103,178);
+    font-weight: 700;
+    color: white;
+}
+.logform input:focus{
+    border: 1px solid #dddfe2;
+    outline: 0;
+}
+.logform input.btn:hover{
+    background-color: #365899;
+}
+.forg{
+    font-size: 11px;
+    color: rgb(65,103,178);
     font-family: Arial, Helvetica, sans-serif;
 }
-.subform input{
-    width: 302px;
-    height: 34;
-    padding: 6px 0 6px 0;
-    margin: 0 42px 0 42px;
-    border: 0;
+.forg .not{
+    font-size: 13px;
+    margin-top: 2px;
+    font-weight: 500;
 }
-.subform input::placeholder{
-    width: 284px;
-    height: 22px;
-    padding: 5px 8px 5px 8px;
-    border: 1px solid;
+.forgo {
+    margin: 7px;
+}
+span.acc:hover , span.sign:hover, .not:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
