@@ -69,6 +69,10 @@ span{
     font-weight: 500;
     font-size: 14px;
 }
+.sign2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 .secA{
     height: 398px;
@@ -145,6 +149,10 @@ span{
     margin-top: 36px;
     border: 0;
 }
+.form input:focus{
+    outline: 0;
+    border: 1px solid rgb(219,219,219);
+}
 .form input{
     width: 268px;
     height: 18px;
@@ -175,9 +183,12 @@ span{
     color: white;
     font-weight: 600;
     font-size: 14px;
-    cursor: pointer;
 }
-.form input.submit:hover{
+.fblink:active{
+    color: #385185;
+}
+.form input.submit.active{
+    cursor: pointer;
     background-color: rgb(0,149,246);
 }
 
@@ -210,6 +221,7 @@ span{
 }
 .mfblogin {
     display: flex;
+    cursor: pointer;
     flex-direction: row;
     align-items: center;
 }

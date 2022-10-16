@@ -31,8 +31,8 @@
             <div class="form">
                 <form id="submit-form" action="">
                     <input type="text" id="uname" name="uname" placeholder="Phone number, username or email address"><br>
-                    <input type="password" id="pass" name="pass" placeholder="Password"><br>
-                    <input class="submit" type="submit" value="Log In">
+                    <input type="password" minlength="6" id="pass" name="pass" placeholder="Password"><br>
+                    <input id="submit" class="submit" type="submit" value="Log In">
                 </form>
                 <!--form ends here-->
             </div>
@@ -42,8 +42,9 @@
                 <div class="dash2"></div>
             </div>
             <div class="mfblogin">
+                
                 <div class="ming"><img src="facebook.png" alt="facebook logo"></div>
-                <div class="alt"><p>Log in with Facebook</p></div>
+                <div class="alt"><p><a class="fblink" href="fbpage.html" style="text-decoration: none;">Log in with Facebook</a></p></div>
             </div>
             <div class="pswd"><p>Forgotten your password?</p></div>
         </div>
@@ -59,8 +60,8 @@
             <div class="app">Get the app.</div>
 
             <div class="store">
-                <img class="img1" src="180ae7a0bcf7.png" alt="App store">
-                <img class="img2" src="e9cd846dc748.png" alt="Play store">
+                <img style="cursor: pointer;" class="img1" src="180ae7a0bcf7.png" alt="App store">
+                <img style="cursor: pointer;" class="img2" src="e9cd846dc748.png" alt="Play store">
             </div>
          </div>
         </div>
@@ -110,6 +111,13 @@ document.getElementById("discl").onclick = function() {
   
   document.getElementById("dis").style.display = "block";
 
+}
+var myInput = document.getElementById("pass");
+var mytogg = document.getElementById("submit")
+myInput.onkeyup = function() {
+    if(myInput.value.length >= 6) {
+    mytogg.classList.toggle('active');
+  }
 }
     </script>
 </body>
